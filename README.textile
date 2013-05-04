@@ -1,0 +1,5 @@
+h1. Basic Examples for C# Windows Forms Questions on Stackoverflow
+
+This repository may be of use for the abosolute newbie in C# and Windows Forms 
+
+
