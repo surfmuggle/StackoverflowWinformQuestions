@@ -14,7 +14,7 @@ using System.Windows.Forms;
 namespace DeleteTextbox
 {
 	/// <summary>
-	/// Automatically delete textbox and label if textbox.text = empty on focus leave
+	/// Automatically delete textbox if textbox.text = empty on focus leave
 	/// http://stackoverflow.com/questions/16345549
 	/// </summary>
 	public partial class MainForm : Form

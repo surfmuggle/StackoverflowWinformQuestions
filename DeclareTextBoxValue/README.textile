@@ -1,0 +1,4 @@
+h1. How declare Textbox value
+
+This is the code for my answer on stackoverflow.com to a question regarding Windows Forms:
+http://stackoverflow.com/questions/16348428
