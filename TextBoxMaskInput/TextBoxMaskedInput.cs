@@ -17,9 +17,9 @@ namespace TextBoxMaskInput
 	/// Dynamic mask textbox money Input
 	/// http://stackoverflow.com/questions/15989717/
 	/// </summary>
-	public partial class MainForm : Form
+	public partial class TextBoxMaskedInput : Form
 	{
-		public MainForm()
+		public TextBoxMaskedInput()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -57,12 +57,13 @@ namespace TextBoxMaskInput
 	    {
 	    	var tb = sender as TextBox;
 	    	var tbText = tb.Text;
+	    	
 	    	if(tbText.IndexOf(" ") !=-1){
-	    		var tbText2 = tbText.Substring(0, tbText.IndexOf(" ")-1);	    	
-	    		var temp = String.Format("{0:D0}", tbText2);
-				MessageBox.Show("temp: _" + temp + "_");
-	        	
+	    		MessageBox.Show("without CurrencyFormationg: " + RemoveCurrencyFormating(tbText));	
+	    		// var temp = String.Format("{0:D0}", tbText2);					   
 	    	}
+	    	
+	    	
 	    	if(tbText.Length>0 && tbText.IndexOf(" ") == -1){
 	    		decimal cubic = Convert.ToDecimal(tbText); 
 	        	tb.Text = string.Format("{0:c}", Convert.ToDecimal(cubic));
@@ -70,5 +71,26 @@ namespace TextBoxMaskInput
 	    	}
 	    }
     
+		
+		void TextBox_EnterEvent(object sender, EventArgs e)
+		{
+			var tb = sender as TextBox;
+			tb.Text = RemoveCurrencyFormating(tb.Text);
+		}
+		
+		/// <summary>
+		/// Remove currency from an input string
+		/// </summary>
+		/// <param name="moneyWithCurrency"></param>
+		/// <returns>String.Format("{0:D0}, inputString)</returns>
+		string RemoveCurrencyFormating(string moneyWithCurrency){
+
+			if(moneyWithCurrency.IndexOf(" ") !=-1)
+			{
+	    		var moneyWithOutCurrencyFormating = moneyWithCurrency.Substring(0, moneyWithCurrency.IndexOf(" ")-1);	    	
+	    		return String.Format("{0:D0}", moneyWithOutCurrencyFormating);				
+	    	}
+			return "";
+		}// RemoveCurrencyFormating
 	}// end of class
 }

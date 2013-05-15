@@ -1,0 +1,170 @@
+body {
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+	MARGIN: 0px; 
+	HEIGHT: 100%; 
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	line-height : 20px;
+	background-color: rgb(198, 224, 235);
+}
+
+div#container {
+	min-width: 770px;
+	max-width: 980px;  
+	margin: 0px auto; 
+	border-left: 2px solid grey;
+	border-right: 2px solid grey;
+	background-color: white;
+}
+
+div#new {
+	padding:10px;
+	background-color:white;
+}
+
+h1 {
+	display: none;
+}
+
+h2 {
+	line-height: 26px;
+}
+
+p, blockquote, table {
+	TEXT-ALIGN: justify;
+	font-size : 12px;
+}
+
+.ulmenu {
+	margin: 15px 0 0 0;
+	padding: 0;
+	list-style-type: none;
+	width: 200px;
+	text-align:left;
+}
+
+.ulmenu li {
+	background-color: #333333;
+	color:#ffffff;
+	margin:6px 0 0 0;
+}
+
+.ulmenu li a {
+	display: block;
+	padding: 6px 2px 6px 10px;
+	font: bold 12px arial, helvetica, sans-serif;
+	color: #3399FF; 
+}
+
+.ulmenu li a:hover {
+	background-color: #333333;
+	color: white;
+}
+
+.ulmain {
+	font-size : 11px;
+}
+
+a {
+	COLOR: #3366cc; 
+	TEXT-DECORATION: none
+}
+
+a:active {
+	COLOR: #3366cc; 
+	TEXT-DECORATION: none
+}
+
+a:link {
+	COLOR: #3366cc; 
+	TEXT-DECORATION: none
+}
+
+a:visited {
+	COLOR: #3366cc; FONT-FAMILY: "Verdana", Times, serif; 
+	TEXT-DECORATION: none
+}
+
+a:hover {
+	background-color: #3366cc; 
+	color : white;
+}
+
+hr {
+	WIDTH: 50%; 
+	COLOR: blue; 
+	HEIGHT: 3px; 
+	BACKGROUND-COLOR: blue; 
+	text-align:center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+hr.grey {
+	WIDTH: 100%; 
+	COLOR: grey;
+	BACKGROUND-COLOR: grey; 
+}
+
+
+.top {
+	background-image:url("Immagine.png");
+	height: 150px;
+}
+
+.menu {
+	FONT-WEIGHT: bold;  
+	float:left; 
+	min-height:700px; 
+	width: 200px; 
+	text-align:center;
+}
+
+div.menu  p {
+	margin-left: 20px;
+}
+
+.main {
+	MARGIN: 0px 0px 0px 205px; 
+	min-height:700px; 
+	padding:30px;
+}
+
+.centertext {
+	TEXT-ALIGN: center;
+}
+
+.redcolor {
+	color: red;
+}
+
+a.email:hover, #twitPNG:hover {
+	BACKGROUND-COLOR: white;
+}
+
+@media print {
+	h1 {
+		display:block;
+		text-align: center;
+	}
+	
+	div#container {
+		border-left: 0px;
+		border-right: 0px;
+	}
+	
+	.menu  {
+		display: none;
+	}
+	
+	.main {
+		margin: 0px;
+	}
+
+	.top {
+		height: 30px;
+	}
+}
+

@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Only allow numeric inputs, a point or a colon (for money values). 
+OnLostfocus display the entered value with currency formatting. 
+OnFocus remove currency formatting.
+http://stackoverflow.com/questions/15989717/windows-forms-c-sharp-dynamic-mask-textbox-money-input</value>
+  </data>
 </root>

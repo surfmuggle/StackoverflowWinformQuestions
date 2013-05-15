@@ -1,15 +1,15 @@
 ﻿/*
  * Created by SharpDevelop.
  * User: Abe
- * Date: 04.05.2013
- * Time: 14:36
+ * Date: 05.05.2013
+ * Time: 09:14
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
 using System.Windows.Forms;
 
-namespace TextBoxMaskInput
+namespace ListBoxItemAddStyle
 {
 	/// <summary>
 	/// Class with program entry point.
@@ -24,7 +24,7 @@ namespace TextBoxMaskInput
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new TextBoxMaskedInput());
+			Application.Run(new ListBoxForm());
 		}
 		
 	}

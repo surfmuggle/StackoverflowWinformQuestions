@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{D07889BA-56B3-48C4-9434-9D6B56EA7A28}</ProjectGuid>
+    <ProjectGuid>{BFBF6286-7D9B-4691-B728-19D32261FBFF}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TextBoxMaskInput</RootNamespace>
-    <AssemblyName>TextBoxMaskInput</AssemblyName>
+    <RootNamespace>ListBoxItemAddStyle</RootNamespace>
+    <AssemblyName>ListBoxItemAddStyle</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
   </PropertyGroup>
@@ -47,20 +47,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TextBoxMaskedInput.cs" />
-    <Compile Include="TextBoxMaskedInput.Designer.cs">
-      <DependentUpon>TextBoxMaskedInput.cs</DependentUpon>
+    <Compile Include="ListBoxForm.cs" />
+    <Compile Include="ListBoxForm.Designer.cs">
+      <DependentUpon>ListBoxForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="TextBoxMaskedInput.resx">
-      <DependentUpon>TextBoxMaskedInput.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
